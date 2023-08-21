@@ -1,11 +1,11 @@
 <template>
-    <div class="grid grid-cols-2 bg-primary-BrightRed items-center py-20 relative overflow-hidden">
-        <img src="../assets/images/bg-tablet-pattern.svg" alt="" class="absolute mix-blend-soft-light opacity-25 -bottom-[30rem] -left-40">
-        <h4 class="text-secondary-LightGray font-bold text-[2.75rem]">Simplify how your team works today.</h4>
-        <button class="p-5 px-10 rounded-full font-bold text-primary-BrightRed bg-secondary-LightGray shadow-lg w-fit h-fit justify-self-end">Get Started</button>
-        <img src="../assets/images/bg-tablet-pattern.svg" alt="" class="absolute mix-blend-soft-light opacity-25 -right-[40rem] -top-[38rem]">
+    <div class="grid grid-cols-2 bg-primary-BrightRed items-center py-20 relative overflow-hidden lg:px-20 xl:px-40">
+        <img src="../assets/images/bg-tablet-pattern.svg" alt="" class="absolute mix-blend-soft-light opacity-25 lg:-bottom-[15rem] xl:-bottom-[25rem] lg:left-8 xl:left-20 lg:w-[35rem] xl:w-[45rem]">
+        <h4 class="text-secondary-LightGray font-bold lg:text-4xl xl:text-[2.75rem]">Simplify how your team works today.</h4>
+        <button class="lg:p-4 xl:p-5 lg:px-8 xl:px-10 rounded-full font-bold text-primary-BrightRed bg-secondary-LightGray shadow-lg w-fit h-fit justify-self-end">Get Started</button>
+        <img src="../assets/images/bg-tablet-pattern.svg" alt="" class="absolute mix-blend-soft-light opacity-25 lg:-right-[28rem] lg:-top-[31rem] xl:-right-[40rem] xl:-top-[38rem] lg:w-[40rem] xl:w-[51rem]">
     </div>
-    <div class="grid grid-flow-col bg-secondary-DarkBlue text-secondary-LightGray py-20">
+    <div class="grid grid-flow-col bg-secondary-DarkBlue text-secondary-LightGray pt-10 xl:pt-20 pb-7 xl:pb-10 lg:px-20 xl:px-40">
         <div class="grid">
             <img src="../assets/images/logo.svg" alt="" class="self-start">
             <div class="flex gap-3 self-end">
@@ -16,13 +16,13 @@
                 <img src="../assets/images/icon-instagram.svg" alt="">
             </div>
         </div>
-        <div>
+        <div class="text-lg flex flex-col gap-4">
             <p>Home</p>
             <p>Pricing</p>
             <p>Products</p>
             <p>About Us</p>
         </div>
-        <div>
+        <div class="text-lg flex flex-col gap-4">
             <p>Careers</p>
             <p>Community</p>
             <p>Privacy Policy</p>
