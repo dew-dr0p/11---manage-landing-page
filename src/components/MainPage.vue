@@ -5,7 +5,7 @@
         </div>
         <div class="max-w-lg box text-center lg:text-left flex flex-col items-center lg:items-start">
             <h3 class="text-primary-DarkBlue font-bold text-5xl md:text-6xl lg:text-5xl xl:text-6xl leading-snug lg:leading-[1.15] xl:leading-[1.15] mb-10">Bring everyone together to build better products.</h3>
-            <p class="lg:text-lg md:text-2xl text-xl max-w-sm mb-10">Manage makes it simple for software teams to plan day-to-day 
+            <p class="lg:text-lg md:text-2xl text-xl lg:max-w-sm mb-10">Manage makes it simple for software teams to plan day-to-day 
             tasks while keeping the larger team goals in view.</p>
             <MainButton text="Get Started" class="mb-5 drop" />
         </div>
@@ -13,28 +13,28 @@
             <img src="../assets/images/illustration-intro.svg" alt="" id="image">
         </div>
     </div>
-    <div class="grid grid-cols-2 lg:gap-14 xl:gap-20 lg:my-16 xl:my-20 lg:px-20 xl:px-40 relative">
-       <div class="max-w-lg box2">
-        <h4 class="text-primary-DarkBlue font-bold lg:text-4xl xl:text-[2.75rem] mb-10">What’s different about Manage?</h4>
-        <p class="text-lg max-w-sm mb-10">
+    <div class="grid grid-flow-row lg:grid-cols-2 lg:gap-14 xl:gap-20 lg:my-16 xl:my-20 lg:px-20 xl:px-40 relative">
+       <div class="max-w-lg box2 text-center lg:text-left m-auto w-full lg:my-0">
+        <h4 class="text-primary-DarkBlue font-bold mt-40 text-4xl md:text-[2.75rem] lg:text-4xl xl:text-[2.75rem] mb-10">What’s different about Manage?</h4>
+        <p class="lg:text-lg md:text-2xl text-xl lg:max-w-sm mb-10">
             Manage provides all the functionality your team needs, without 
             the complexity. Our software is tailor-made for modern digital 
             product teams.
         </p>
        </div>
        <div>
-           <div v-for="benefit in benefits" :key="benefit.id" class="flex gap-5 mb-10">
-            <button class="p-2 lg:px-5 xl:px-6 font-bold rounded-full text-secondary-LightGray bg-primary-BrightRed h-fit">{{ benefit.id }}</button>
-            <div class="mt-2">
-                <h6 class="font-bold mb-5 text-primary-DarkBlue">{{ benefit.title }}</h6>
-                <p>{{ benefit.subtitle }}</p>
+           <div v-for="benefit in benefits" :key="benefit.id" class="flex ml-5 lg:ml-0 lg:gap-5 mb-10">
+            <button class="p-2 px-5 md:px-6 lg:px-5 xl:px-6 font-bold rounded-full text-secondary-LightGray bg-primary-BrightRed h-fit">{{ benefit.id }}</button>
+            <div class="">
+                <h6 class="font-bold mb-5 text-primary-DarkBlue lg:bg-inherit px-8 -ml-4 lg:ml-0 -z-[1] relative lg:static py-2 lg:p-0 bg-secondary-paleRed">{{ benefit.title }}</h6>
+                <p class="-ml-16 lg:ml-0">{{ benefit.subtitle }}</p>
             </div>
            </div>
         </div>
-        <img src="../assets/images/bg-tablet-pattern.svg" alt="" class="absolute -z-50 -left-[30rem] top-3/4 trigger">
+        <img src="../assets/images/bg-tablet-pattern.svg" alt="" class="absolute -z-50 lg:-left-[30rem] lg:top-3/4 trigger -right-[40rem] -top-3/4">
     </div>
     <div class="text-center lg:my-16 xl:my-20 lg:px-20 xl:px-40">
-        <h4 class="text-primary-DarkBlue font-bold lg:text-4xl xl:text-[2.75rem] mb-32">What they’ve said</h4>
+        <h4 class="text-primary-DarkBlue font-bold mt-10 text-4xl md:text-[2.75rem] lg:text-4xl xl:text-[2.75rem] mb-32">What they’ve said</h4>
         <div class="grid grid-flow-col gap-10 mb-16" id="slider">
             <div v-for="testimonial in testimonials" :key="testimonial.name" class="w-[32rem] p-10 bg-secondary-LightGray flex flex-col items-center transition ease-linear">
                 <img :src="testimonial.avatar" alt="" class="relative -top-20 w-20">
