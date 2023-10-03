@@ -2,16 +2,14 @@
 @import './style.css';
 
 #app {
-  /* max-width: 1440px; */
   margin: 0 auto;
-  /* padding: 5rem; */
   font-weight: normal;
-  overflow: hidden;
+  overflow-x: clip;
+  position: relative;
 }
 
 @media (min-width: 1024px) {
   #app {
-    /* padding: 0 10rem; */
-    /* transition: ease; */
+    transition: ease;
   }
 }

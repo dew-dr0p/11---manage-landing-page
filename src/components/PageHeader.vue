@@ -1,6 +1,6 @@
 <template>
     <img src="../assets//images/bg-tablet-pattern.svg" alt="" class="absolute -right-40 -top-40 -z-50 lg:w-[40rem] xl:w-[51rem]">
-    <div class="flex my-16 xl:my-20 justify-between items-center px-10 lg:px-20 xl:px-40">
+    <div class="flex my-16 xl:my-20 justify-between items-center px-5 md:px-10 lg:px-20 xl:px-40">
         <img src="../assets/images/logo.svg" alt="Manage Logo">
         <div class="lg:flex hidden lg:gap-5 xl:gap-10 text-primary-DarkBlue cursor-pointer">
             <p>Pricing</p>
