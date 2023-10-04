@@ -36,7 +36,7 @@
     <div class="text-center my-8 mb:my-12 lg:my-16 xl:my-20 px-5 md:px-10 lg:px-20 xl:px-40">
         <h4 class="text-primary-DarkBlue text font-bold mt-10 text-4xl md:text-[2.75rem] lg:text-4xl xl:text-[2.75rem] mb-32">What they’ve said</h4>
         <div class="grid grid-flow-col gap-10 mb-16 relative" id="slider" >
-            <div v-for="testimonial in testimonials" :key="testimonial.name" class="max-w-lg slider lg:w-[32rem] p-10 bg-secondary-LightGray flex flex-col items-center transition ease-linear">
+            <div v-for="testimonial in testimonials" :key="testimonial.name" class="max-w-lg slider w-[32rem] p-10 bg-secondary-LightGray flex flex-col items-center transition ease-linear">
                 <img :src="testimonial.avatar" alt="" class="relative -top-20 w-20">
                 <h6 class="font-bold mb-5 text-primary-DarkBlue -mt-16">{{ testimonial.name }}</h6>
                 <p>{{ testimonial.testimony }}</p>
@@ -64,7 +64,7 @@ const benefit = gsap.timeline({ scrollTrigger: { trigger: '.benefits', toggleAct
 onMounted(() => {
     gsap.from('.box', { x: -600, duration: 1.5, scrollTrigger: { trigger: '.box', toggleActions: 'play pause restart reset' } })
     gsap.from('#image', { scale: 0.5, duration: 1.5, scrollTrigger: { trigger: '.box', toggleActions: 'play pause restart reset' } })
-    gsap.from('.drop', { y: -50, duration: 1, delay: 0.5, ease: 'bounce.out'})
+    gsap.from('.drop', { y: -50, duration: 1, delay: 0.5, ease: 'bounce.out', scrollTrigger: { trigger: '.box', toggleActions: 'play pause restart reset' }})
     gsap.from('.trigger', { x: -200, y: 200, duration: 1.5, scrollTrigger: { trigger: '.trigger' } })
     gsap.from('.text', { scale: 0.25, duration: 1.5 })
     benefit.from('.box2', { y: -250, duration: 1.5, opacity: 0 })
